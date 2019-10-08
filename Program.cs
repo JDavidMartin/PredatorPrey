@@ -9,9 +9,13 @@ namespace predPrey
     {
         static void Main(string[] args)
         {
-            grid Field = new grid(250, 250);
-            
-            Field.fillGrid(10, 10); //  I.e. 15% are living, and 50% of these are Predators
+            int gridX = 250;
+            int gridY = 250;
+            int livingPercentage = 10;
+            int predatorPercentage = 10;
+
+            grid Field = new grid(gridX, gridY);
+            Field.fillGrid(livingPercentage, predatorPercentage); //  I.e. 15% are living, and 50% of these are Predators
 
             int maxIterations = 1000;
             int iteration = 0;
